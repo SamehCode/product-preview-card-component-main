@@ -1,0 +1,109 @@
+/* Start Variables */
+:root {
+    --main-color: #3d8168;
+}
+/* End Variables */
+body {
+    font-family: 'Fraunces', serif;
+}
+.card {
+    background-color: rgb(243 234 227);
+    padding: 100px;
+    box-shadow: 0 0 10px #ddd;
+}
+.card .container {
+    display: flex;
+    align-items: center;
+    height: 600px;
+    margin: 0 auto;
+    justify-content: center;
+    border-radius: 6px;
+}
+.card .container img {
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.card .container .text {
+    background-color: white;
+    height: calc(100% - 40px);
+    width: 300px;
+    padding: 20px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.card .container .text p {
+    font-size: 14px;
+    color: #777;
+}
+.card .container .text p:first-child {
+    text-transform: uppercase;
+}
+.card .container .text h1 {
+    font-size: 40px;
+    padding-right: 20px;
+}
+.card .container .text h1 + p {
+    line-height: 2;
+}
+.card .container .text .price {
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+}
+.card .container .text .price span:first-child {
+    color: var(--main-color);
+    font-size: 35px;
+    margin-right: 20px;
+}
+.card .container .text .price span:last-child {
+    color: #777;
+}
+.card .container .text form {
+}
+.card .container .text form i {
+    position: relative;
+    z-index: 1;
+    top: 40px;
+    left: 30%;
+    color: white;
+}
+.card .container .text form input[type='submit'] {
+    padding: 20px 20px 20px 60px;
+    position: relative;
+    background-color: var(--main-color);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    margin: 0 0 30px;
+}
+.card .social-icons {
+    display: flex;
+    gap: 30px;
+    justify-content: end;
+    margin: 20px 0 0;
+}
+.card .social-icons i {
+    color: #3f51b5;
+    transition: .5s;
+}
+.card .social-icons i:hover {
+    color: #2196f3;
+}
+.card .fa-arrow-right-long {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: .3s;
+}
+.card .fa-arrow-right-long:hover {
+    color: #2196f3;   
+}
